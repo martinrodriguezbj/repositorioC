@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int es_palindromo(char *p){
+	int tam=strlen(p)-1;
+	for (int i=0,j=tam;i<=j;i++,j--){
+		if (p[i]!=p[j])
+			return 0;
+		}
+	return 1;
+}
+
+int cantidadCapicua(char *frase){
+	char w[255]="";
+	int res,s,cant=0;
+	while (res=sscanf(frase,"%s%n",w,&s) != EOF){ //n lo que hace es guardar en s la cantidad de caracteres leidos en la palabra
+		frase+=s;
+		if(es_palindromo(w))
+			cant++;
+	}	
+	return cant;
+}
+
+int main(){
+	char *frase="neuquen boca reconocer";
+	printf("Cantidad palabras capicuas: %d",cantidadCapicua(frase));
+}

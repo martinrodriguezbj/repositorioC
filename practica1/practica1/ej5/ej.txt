@@ -1,0 +1,12 @@
+#include <limits.h> // Para usar UINT_MA
+#include <stdio.h>
+
+char uno(){
+char c;
+c = 'A' + 2;
+return (c);
+}
+
+int main(){
+printf("Retorna: %d",uno());
+{

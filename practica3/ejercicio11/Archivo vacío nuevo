@@ -1,0 +1,15 @@
+int cantidadCapicua(char *frase){
+	int i;
+	int j=0;
+	int cant=0;
+	while (frase[i]!='\0'){
+		if(frase[i]!=' '){
+				frase[i]='\0';
+				if (es_palindromo(frase+j)){
+					cant++;
+				}
+				j=j+i+1;
+			}
+	    i++;
+	}
+}

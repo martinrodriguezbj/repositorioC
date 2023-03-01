@@ -1,0 +1,2 @@
+dudas:
+ejercicoi 11.d , por que al ingresar una letra se hace un bucle infinito?

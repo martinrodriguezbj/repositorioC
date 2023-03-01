@@ -1,0 +1,18 @@
+3-e
+El proceso de compilacion invoclucra cuatro etapas sucesivas: preprocesamiento, compilacion,ensamblado y enlazado. El comando gcc es capaz de realizar todo el proceso de una sola vez
+
+el comando -E sirve para interpretar las directivas al preprocesador. Entre otras cosas, las variables inicializadas con #define son sustituidas en el codigo por su valor en todos los lugares donde aparece su nombre
+
+El comando -S sirve para realizar la compilacion, transforma el codigo C en el lengauje ensamblador propio del procesador de nuestra maquina.
+
+El comando -o sirve para realizar el ensamblado, el ensamblado transforma el programa escrito en lenguaje ensamblador a codigo objeto, un archivo binario en lenguaje de amquina ejecutable por el procesador.
+
+El comando -c crea el archivo en codigo objeto
+
+
+El scanf tiene que leer del buffer hasta que encuentra un número o el dato que necesite (%d).
+La función gets es más simple, y lo único que hace es leer todo lo que haya en el buffer hasta que encuentre un '\n'
+
+
+https://iie.fing.edu.uy/~vagonbar/gcc-make/gcc.htm#Sintaxi
+https://programacionnerd.blogspot.com/2012/05/c-macros.html
